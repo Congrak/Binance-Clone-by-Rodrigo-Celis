@@ -1,11 +1,14 @@
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" src="../templates/style.css" type="text/CSS">
 
 <nav class="navbar nav-tabs navbar-expand-lg bg-ligth m-0 p-0 border border-white"
     style="font-family: 'IBM Plex Sans', sans-serif; font-size: 14px; color:black;">
@@ -34,7 +37,7 @@
 
             <!--NavBar Firts Part-->
 
-            <div class="collapse navbar-collapse">
+            <div class="collapse navbar-collapse" id="nav">
 
                 <!--Grid-->
 
@@ -42,18 +45,20 @@
                     <li class="nav-item dropdown mx-8">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
-                            <i class="bi bi-grid-3x3-gap-fill" style="color: black; width: 16px; height: 16px;"></i>
+                            <img src="../assets/grid-3x3-gap-fill.svg" alt="grid" fill="black;">
                         </a>
+                        <ul class="dropdown-menu row">
+                            <li><a class="dropdown-item col" href="#">Action</a></li>
+                            <li><a class="dropdown-item col" href="#">Another action</a></li>
+                            <li><a class="dropdown-item col" href="#">Something else here</a></li>
+                        </ul>
                     </li>
 
                     <!--Buy Crypto-->
 
-                    <li class="nav-item dropdown mx-8">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Buy Crypto
-                        </a>
-                    </li>
+                    <button class="btn btn-ligth btn-sm mx-8">
+                        Buy Crypto
+                    </button>
 
                     <!--Market-->
 
@@ -97,7 +102,7 @@
 
             <!--NavBar Secod part-->
 
-            <div class="collapse navbar-collapse d-flex justify-content-end">
+            <div class="collapse navbar-collapse d-flex justify-content-end" id="navSecond">
                 <!--Log In-->
                 <ul class="navbar-nav ">
                     <li class="nav-item mx-8">
@@ -123,7 +128,7 @@
 
                     <!--Currency-->
 
-                    <li class="nav-item mx-8 border-start border-end border-dark w-1">
+                    <li class="nav-item mx-8 border-start border-end border-dark">
                         <a class="nav-link">USD</a>
                     </li>
 
@@ -131,7 +136,11 @@
 
                     <li class="nav-item mx-8">
                         <a class="nav-link">
-                            <i class="bi bi-moon-fill" style="color:black ;"></i>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-moon-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z" />
+                            </svg>
                         </a>
                     </li>
                 </ul>
